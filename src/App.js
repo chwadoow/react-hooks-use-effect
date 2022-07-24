@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import DogPics from "./DogPics";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(5);
   const [text, setText] = useState("");
 
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
+      <DogPics/>
     </div>
   );
 }
